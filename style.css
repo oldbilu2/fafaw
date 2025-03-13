@@ -1,6 +1,6 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #121212;
+  background-color: rgba(20, 20, 20, 0.7);
   color: #fff;
   margin: 0;
   padding: 0;
@@ -11,20 +11,20 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-blend-mode: multiply; /* Blend mode to darken the GIF */
-  opacity: 0; /* Initially hide the body */
-  transition: opacity 1s ease; /* Fade-in transition */
+  background-blend-mode: multiply;
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 
 body.loaded {
-  opacity: 1; /* Make the body visible when loaded */
+  opacity: 1;
 }
 
 header {
-  background-color: transparent; /* Remove background color */
+  background-color: transparent;
   padding: 20px;
   text-align: center;
-  box-shadow: none; /* Remove box shadow */
+  box-shadow: none;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -76,9 +76,9 @@ main {
 section {
   padding: 20px;
   border-radius: 8px;
-  background-color: transparent; /* Remove background color */
+  background-color: transparent;
   margin-bottom: 20px;
-  box-shadow: none; /* Remove box shadow */
+  box-shadow: none;
 }
 
 .hidden-section {
@@ -123,7 +123,7 @@ header .social-links {
   left: 10px;
   display: flex;
   order: 1;
-  align-items: center; /* Vertically align items */
+  align-items: center;
 }
 
 header .social-links a {
@@ -144,17 +144,17 @@ header .social-links img {
   width: 30px;
   height: auto;
   filter: grayscale(100%);
-  transition: filter 0.3s ease; /* Add transition for filter */
+  transition: filter 0.3s ease;
 }
 
 header .social-links a:hover img {
-  filter: grayscale(0%); /* Remove grayscale on hover */
+  filter: grayscale(0%);
 }
 
 header .social-links span {
-  color: #fff; /* Adjust the color as needed */
-  margin-left: 5px; /* Adjust the spacing as needed */
-  font-size: 1em; /* Adjust the font size as needed */
+  color: #fff;
+  margin-left: 5px;
+  font-size: 1em;
   text-shadow: 0 0 5px rgba(168, 85, 255, 0.5);
 }
 
@@ -167,8 +167,8 @@ footer {
   text-shadow: 0 0 5px rgba(168, 85, 255, 0.5);
   border: 1px solid rgba(168, 85, 255, 0.3);
   border-radius: 5px;
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -176,14 +176,14 @@ footer p {
   color: #558BFF;
   text-shadow: 0 0 5px #558BFF;
   animation: glow 1.5s infinite alternate;
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 
 footer img {
-  width: 30px; 
+  width: 30px;
   height: auto;
-  border-radius: 50%; 
-  box-shadow: 0 0 5px #a855ff; 
+  border-radius: 50%;
+  box-shadow: 0 0 5px #a855ff;
 }
 
 @keyframes glow {
@@ -226,7 +226,7 @@ footer img {
   opacity: 0;
   transition: opacity 0.5s ease;
   margin-bottom: 10px;
-  animation: atomGlow 2s infinite alternate; 
+  animation: atomGlow 2s infinite alternate;
 }
 
 .atom-text.active {
@@ -235,71 +235,71 @@ footer img {
 
 /* Keyframes for atom glow */
 @keyframes atomGlow {
-    from {
-        text-shadow: 0 0 5px #558BFF;
-    }
-    to {
-        text-shadow: 0 0 20px #558BFF;
-    }
+  from {
+    text-shadow: 0 0 5px #558BFF;
+  }
+  to {
+    text-shadow: 0 0 20px #558BFF;
+  }
 }
 
 /* Styling for the "Bem-vindos" section */
 #inicio-section {
-    text-align: center;
+  text-align: center;
 }
 
 #inicio-section h2 {
-    color: #558BFF;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    text-shadow: 0 0 5px #558BFF;
+  color: #558BFF;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px #558BFF;
 }
 
 #inicio-section p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    color: #ddd;
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #ddd;
 }
 
 #inicio-section h3 {
-    color: #fff;
-    font-size: 1.8em;
-    margin-bottom: 15px;
-    font-weight: bold; 
-    text-shadow: 0 0 5px #558BFF; 
+  color: #fff;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-shadow: 0 0 5px #558BFF;
 }
 
 #inicio-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    max-width: 600px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
 }
 
 #inicio-section li {
-    background-color: rgba(51, 51, 51, 0.5);
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
-    transition: background-color 0.3s ease, transform 0.3s ease; 
+  background-color: rgba(51, 51, 51, 0.5);
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 #inicio-section li:hover {
-    background-color: rgba(68, 68, 68, 0.7);
-    transform: scale(1.03); 
+  background-color: rgba(68, 68, 68, 0.7);
+  transform: scale(1.03);
 }
 
 #inicio-section li h4 {
-    color: #558BFF;
-    margin-bottom: 5px;
-    text-shadow: 0 0 3px #558BFF; 
+  color: #558BFF;
+  margin-bottom: 5px;
+  text-shadow: 0 0 3px #558BFF;
 }
 
 #inicio-section li p {
-    font-size: 1.1em;
-    color: #eee; 
+  font-size: 1.1em;
+  color: #eee;
 }
 
 /* Section slide-in animation */
@@ -326,76 +326,76 @@ footer img {
 }
 
 #feedback-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; 
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 #feedback-form input[type="text"],
 #feedback-form textarea {
-    padding: 10px;
-    border: 1px solid #444;
-    background-color: #333;
-    color: #fff;
-    border-radius: 5px;
-    margin-bottom: 0; 
-    width: 100%; 
-    box-sizing: border-box; 
+  padding: 10px;
+  border: 1px solid #444;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 #feedback-form input[type="text"]::placeholder,
 #feedback-form textarea::placeholder {
-    color: #999;
+  color: #999;
 }
 
 #anonymous-check-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 #anonymous-check {
-    margin-right: 10px;
-    width: 20px;
-    height: 20px;
-    appearance: none; 
-    background-color: #333; 
-    border: 2px solid #555; 
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; 
-    position: relative; 
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  background-color: #333;
+  border: 2px solid #555;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
 }
 
 #anonymous-check:checked {
-    background-color: #558BFF; 
-    border-color: #558BFF; 
-    box-shadow: 0 0 10px #558BFF; 
-    animation: pulse 0.5s ease; 
+  background-color: #558BFF;
+  border-color: #558BFF;
+  box-shadow: 0 0 10px #558BFF;
+  animation: pulse 0.5s ease;
 }
 
 #anonymous-check:checked::before {
-    content: '\2713'; 
-    font-size: 16px;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  content: '\2713';
+  font-size: 16px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #anonymous-check-label {
-    color: #fff;
-    font-size: 1em;
+  color: #fff;
+  font-size: 1em;
 }
 
 #anonymous-check-description {
-    color: #999; 
-    font-size: 0.8em; 
-    margin-top: 5px; 
+  color: #999;
+  font-size: 0.8em;
+  margin-top: 5px;
 }
 
 @keyframes pulse {
@@ -412,60 +412,60 @@ footer img {
 
 /* Notification Styling */
 .notification {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 20px 30px;
-    border-radius: 10px;
-    z-index: 1000;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    pointer-events: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
 }
 
 .notification.show {
-    opacity: 1;
+  opacity: 1;
 }
 
 #membros-section h2 {
-    color: #558BFF;
-    font-size: 2em;
-    margin-bottom: 20px;
-    text-shadow: 0 0 5px #558BFF;
-    text-align: center;
+  color: #558BFF;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px #558BFF;
+  text-align: center;
 }
 
 #membros-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    max-width: 600px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
 }
 
 #membros-section li {
-    background-color: rgba(51, 51, 51, 0.5);
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
-    transition: background-color 0.3s ease, transform 0.3s ease; 
+  background-color: rgba(51, 51, 51, 0.5);
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 #membros-section li:hover {
-    background-color: rgba(68, 68, 68, 0.7);
-    transform: scale(1.03); 
+  background-color: rgba(68, 68, 68, 0.7);
+  transform: scale(1.03);
 }
 
 #membros-section li h4 {
-    color: #558BFF;
-    margin-bottom: 5px;
-    text-shadow: 0 0 3px #558BFF; 
+  color: #558BFF;
+  margin-bottom: 5px;
+  text-shadow: 0 0 3px #558BFF;
 }
 
 #membros-section li p {
-    font-size: 1.1em;
-    color: #eee; 
+  font-size: 1.1em;
+  color: #eee;
 }
